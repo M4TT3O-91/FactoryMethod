@@ -3,6 +3,6 @@
     public interface IVehicle
     {
         int GetPower();
-        double GetWeight();
+        double GetWeigth();
     }
 }
