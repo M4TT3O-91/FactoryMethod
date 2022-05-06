@@ -2,10 +2,18 @@
 {
     public abstract class Vehicle : IVehicle
     {
-        public int Cilindrata;
+        private int Cilindrata;
+        private double Wheigth
+            ;
 
-        public Vehicle(int cilindrata) => Cilindrata = cilindrata;
+        protected Vehicle(int cilindrata, double wheigth)
+        {
+            Cilindrata = cilindrata;
+            Wheigth = wheigth;
+        }
 
+        public double GetWeigth() => Wheigth;
+        
         public int GetPower() => Cilindrata;
 
     }

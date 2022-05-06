@@ -8,7 +8,11 @@ namespace FactoryMethodVehicle
 {
     public class Sidecar : Vehicle
     {
-        public Sidecar(int cilindrata) : base(cilindrata)
+        public Sidecar(int cilindrata, double wheigth) : base(cilindrata, wheigth)
+        {
+        } 
+
+        public Sidecar(int cilindrata) : base(cilindrata, 500D)
         {
         }
     }
